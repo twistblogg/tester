@@ -1,8 +1,8 @@
 import { useSiteMetadata, useColorMode } from "@reflexjs/gatsby-theme-core"
-
+import { Search } from "@reflexjs/gatsby-plugin-search-algolia"
 export const HeaderBlock = ({ ...props }) => {
   const [showMenu, setShowMenu] = React.useState(false)
-  const navName = "header"
+  const navName = "headernav"
   return (
     <Header
       position={["sticky", "relative"]}
@@ -16,6 +16,7 @@ export const HeaderBlock = ({ ...props }) => {
         <Flexbox d={["none", "flex"]} justifyContent="space-between" py="1">
           <Branding />
           <NavMenu name={navName} gap={[0, 8, 14]} ml={["auto", "auto"]} />
+          <Search placeholder="Type your Query..." fontSize="md" />
           <SocialLinks ml="auto" mr="4" borderRightWidth="1px" pr="4" />
           <ModeToggle ml="0" />
         </Flexbox>
