@@ -1,0 +1,59 @@
+---
+title: How To Use FontAwesome Icons In Blogger Template
+excerpt: A simple guide to showcase how easily you can use font awesome in your blog.
+slug: 2015/01/15/my-slugs.html
+date: 2020-07-10
+image: how to use font awesome in blogger.png
+caption: Font Awesome Icons In Blogger
+published: true
+featured: true
+author: Aman Bhattarai
+tags:
+  - Writing
+  - Stories
+---
+
+FontAwesome icons as name suggests, are awesome and piece of cake for all designers. You can use these icons on your blog, web apps, graphic designs and much more. These icons are extremely useful and that is why these icons are being used by many people day by day. By now most of the popular bloggers are using these icons on their blogs and apps. These icons are getting more popular every next day. So what are these FontAwesome icons, how you can use and what will be the benefit of using these icons to you is what we are going to explain in this tutorial.
+
+
+#### 1. What are these FontAwesome Icons?
+
+FontAwesome Icons are vector icons means these icons are scalable to any size and display perfect in high resolutions.
+ [Recommended: Show Last updated date in blogger post](https://www.twistblogg.com/2019/09/show-published-and-last-updated-date-in-blogger-post.html)
+
+#### 2. Can we customize these icons on our template?
+
+These icons can be customized in size, shadow, color and everything which can be achieved via using CSS font style. All you have to do is add these styles to your blog template CSS stylesheet using class "i".
+
+#### 3. Is any JavaScript required to get these icons work on my blog?
+
+That is the beauty of these icons that you need No JavaScript code to get these icons work on your blog. No more load time and works on all devices perfectly
+ [Recommended: Add Google Analytics On Blogger](https://www.twistblogg.com/2014/04/how-to-add-google-analytics-on-blogger.html)
+
+#### 4. Are these icons free or premium?
+
+These icons are totally free for use in any way (personal or commercial use). Good deal, no?
+
+#### 5. Why should I use these icons? Why not PNG or other images?
+
+This is the excellent question and answer is Awesome. These icons load with 10x speed than your PNG or other image files and minimize the number of HTTP requests of loading images on your blog. These icons load as other text/fonts of your blog. Ultimately they boost the loading speed of your blog, gains more visitors, gives awesome look to your blog and help you in blog SEO in a way or other.
+
+### How To Use These Icons On My Blog?
+
+To use these icons on your blogger blog, you need to edit template just a little. Go to **Blogger → Template → Edit Template → Click Inside Code** ([backup your template code](https://www.twistblogg.com/2014/05/how-to-backup-all-blogger-blogs-with-google-takeout.html) before editing by copying code to notepad). Now press Ctrl+f or Cmd+f then   
+search for `</head>` tag and paste the given code below it.
+
+<Image src="placeholder.jpg" alt="Test Image"/>
+![Test Image](placeholder.jpg)
+
+```js title=Script.js
+<script type='text/javascript'>
+//<![CDATA[
+function loadCSS(e, t, n) { "use strict"; var i = window.document.createElement("link"); var o = t || window.document.getElementsByTagName("script")[0]; i.rel = "stylesheet"; i.href = e; i.media = "only x"; o.parentNode.insertBefore(i, o); setTimeout(function () { i.media = n || "all" }) }
+loadCSS("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css");
+//]]>
+</script>
+<noscript>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css' rel='stylesheet'/>
+</noscript>
+```

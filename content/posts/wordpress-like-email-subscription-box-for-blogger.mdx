@@ -1,0 +1,202 @@
+---
+title: Premium WordPress Like Email Subscription Box For Blogger
+excerpt: Get Wordpress flavored email subscription box for blogger
+date: 2018-08-28T14:32:00.000+05:45
+slug: 2018/08/wordpress-like-email-subscription-box-for-blogger.html
+aliases: [ "https://www.twistblogg.com/2018/08/wordpress-like-email-subscription-box-for-blogger.html" ]
+image: Premium Email Subscription Widget for Blogger.png
+published: true
+featured: true
+author: Aman Bhattarai
+tags:
+ - Blog Themes
+ - Content 
+---
+
+Few weeks ago, our team had shared [Stylish Email Subscription Widget](https://twistblogg.blogspot.com/search/label/Subscription%20Widgets) v1,v2 and got lot of responses. Today I personally decided to share another version - **Premium WordPress like email subscription box/widget for blogger**. It looks so premium and eye catching, I bet users can't ignore it.  
+  
+<Image src="placeholder.jpg"/>
+
+Email Subscription Box plays an integral role in the success of blogs. Users may like the website and wish for contents to be delivered in a safe and fast way. What is the safe and fast way to inform someone? Definitely via Email \[Don't think of phone calls 😀\]. The more email subscription users, the better chance for shouting about the content and in turn more traffics.  
+  
+Blogger provides [Feedburner Email Subscription Box](https://twistblogg.blogspot.com/2015/04/email-subscription-popup-blogger-plugin.html) which is hmm not that much professional and beautiful. But WordPress really has a lot of plugins that undoubtedly provide premium email subscription widget. I was fantasized by the beauty of those widgets and planned to design one for blogger. Here it is, professional wordpress like email box for blogger.  
+  
+
+#### Features of WordPress Like Email Subscription Box For Blogger
+
+*   Fully Responsive Design.
+*   Made with pure CSS and HTML so it loads faster.
+*   Fits perfectly in Sidebar.
+*   Super Easy to customize the color and style.
+*   Premium Look.
+*   Font Awesome used.
+*   Need not to mention, WordPress Like Design.
+
+  
+#post-note{background-color:snow;color:#616161;font-size:15px;padding:10px;border-top:5px solid red}#post-note1{background-color:#F8F8F8;color:#737272;padding:10px}  
+
+**NOTE:-** You do not have permission to COPY and SHARE my code on your blog. Neither you can remove the Credits given in the CSS comments. CSS comments do not appear on your blog. Neither they provide me any backlink nor they affect your blog in anyway so keep them intact. Respect the hard-work of others'. Play it safe and clean. :)
+
+**BONUS:-** I have included a backlink in the bottom of subscription box and you can remove it simply from the HTML part if you wish to. Choice is yours! My blogger widgets are always neat and clean, just all what you need.
+
+  
+So here we go, demo of our stylish email subscription widget. Take a look:  
+  
+
+![Premium Email Subscription Widget for Blogger]("Premium Email Subscription Widget for Blogger.png")
+
+  
+Isn't it cool? Do you like the widget? Here is step by step procedure to install this to your blog.  
+  
+
+### Get WordPress Like Email Subscription Widget For Blogger
+
+I've divided the steps into two parts: Installing Font Awesome Icon and Adding of HTML and CSS Code.Before that, let's [backup the Blog](https://twistblogg.blogspot.com/2014/05/how-to-backup-all-blogger-blogs-with-google-takeout.html).  
+  
+
+#### Step 1: Installing Font Awesome Icon
+
+Go to **Blogger Dashboard** → **Template Section** → **Edit HTML**. Search for `<head>` and paste the following code just below `<head>`. Save the Template.  
+
+```html 
+<link href='http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css' rel='stylesheet'/>
+```
+
+_ Note: Many of you might have already installed font-awesome. If so, ignore step 1!_  
+[Also Learn: How to use font awesome icons in Blogger ](https://twistblogg.blogspot.com/2014/01/How-To-Use-FontAwesome-Icons-In-Blogger.html)  
+  
+
+#### Step 2: Adding CSS and HTML Code
+
+Go to **Blogger Dashboard** → **Layout Section** → **Add a Gadget** \[Click on Sidebar\] → Press **HTML/JavaScript**. Enclose CSS within `<style>..</style>` tag and place HTML below it.
+  
+```css title=file.css
+/* ------------------------------------------------------------  
+Premium WordPress Email Subscription Box Widget  
+Designed by :: https://www.TwistBlogg.com  
+Keep These Credits Intact, Do Not Remove  
+-------------------------------------------------------------*/ 
+ #tb-subscribe{  
+    padding:26px;  
+    background:#03a6c4;   /*Change the Background Color of the Newsletter*/ 
+    text-align:center;  
+    height:308px;    /*Adjust the height of the Newsletter*/
+    font-family:inherit  
+}  
+ #tb-subscribe h4.title{  
+    font-size:22px;   /*Modify font size of text "Get More Stuffs Like This"*/  
+    color:#FFF;  
+    line-height:1;  
+    text-transform:uppercase;  
+    margin-bottom:0;  
+    margin-top:0  
+}  
+ #tb-subscribe h4.title span{  
+    display:inline-block;  
+    font-weight:700;  
+    font-size:38px;  /*Modify font size of text "In Your Inbox " */ 
+    margin-top:15px  
+}  
+ #tb-subscribe p{  
+    margin:0  
+}  
+ #tb-subscribe p.text{  
+    color:#FFF;  
+    margin:15px 0;  
+    opacity:.8;  
+    font-family:Arial  
+}  
+ #tb-subscribe input{  
+    border:none;  
+    width:100%;  
+    -moz-box-sizing:border-box;  
+    box-sizing:border-box;  
+    padding:10px 0;  
+    margin:0;  
+    box-shadow:none;  
+    border-radius:0;  
+    height:45px;  
+    text-indent:10px;  
+    text-align:center  
+}  
+ #tb-subscribe .email-field{  
+    margin-top:10px  
+}  
+ #tb-subscribe input.email-field{  
+    color:#000;  
+    background:#fff;  
+    font-size:15px  
+}  
+ #tb-subscribe input.tb-submit{  
+    background:#323232;     /*Change the background color of Sign me up Button*/ 
+    border:1px solid #676767;  
+    color:#fff;  
+    margin-top:20px;  
+    font-size:18px;  
+    text-transform:uppercase;  
+    font-weight:500;  
+    cursor:pointer;  
+    width:100%        /*Modify width of Sign me up Button*/  
+}  
+ #tb-subscribe input.tb-submit:hover{  
+    background:#000  
+}  
+ #tb-subscribe form{  
+    text-align:center  
+}  
+ #tb-subscribe .tb-lock-policies:before{  
+    content:"\f023";   /*Change font awesome Icon*/ 
+    position:absolute;  
+    left:16px;  
+    font-size:22px;  /*Adjust size of Font Awesome Icon*/  
+    font-family:fontawesome;  
+    color:#FFF  
+}  
+ #tb-subscribe .tb-lock-policies{  
+    font-family:"Oswald",sans-serif;  
+    color:#FFF;  
+    text-align:center;  
+    font-size:12px;   /* To change the text size of Safe With us | Privacy Policy | Get this widget */  
+    margin-left:10px;  
+    padding:0;  
+    line-height:30px;  
+    margin-top:10px  
+}  
+ #tb-subscribe .tb-lock-policies a{  
+    color:#FFF;  
+    text-decoration:none !Important  
+} 
+
+```
+And here's the HTML part:
+
+```html title=file.html
+<div id="tb-subscribe">  
+<h4 class="title" style="color: #FFFFFF;">Get more stuff like this<br/> <span>in your inbox</span></h4>  
+<p class="text" style="color: #FFFFFF;">Subscribe to our mailing list and get fresh high quality updates for lifetime.</p>             
+<form action='http://feedburner.google.com/fb/a/mailverify' method='post' onsubmit='window.open(&apos;http://feedburner.google.com/fb/a/mailverify?uri=twistblogg&apos;, &apos;popupwindow&apos;, &apos;scrollbars=yes,width=550,height=520&apos;);return true' target='popupwindow'>  
+<input class="email-field" type="text" value="" placeholder="Enter your email here" name="email"/>  
+<input type="hidden" value="TwistBlogg" name="uri" /><input type="hidden" name="loc" value="en_US" />  
+ <input class="tb-submit" name="submit" type="submit" value="Sign Up Now" />  
+                    </form>  
+<div class='tb-lock-policies'>Safe With Us | <a href='https://twistblogg.blogspot.com/p/privacy-policy.html'>Privacy Policy</a> | <a href='https://twistblogg.blogspot.com/2018/08/wordpress-like-email-subscription-box-for-blogger.html' title='Email Subscription Box by TwistBlogg'>Get This Widget</a></div>
+</div>  
+
+```
+
+Important Note: I've used font-family:inherit in the code. Thus this email subscription widget makes use of default font family of the template. Doing so improves page speed. But the widget mayn't align properly. Do change the height:308px section to maintain the widget height!
+  
+**Recommended:** [Top 5 Free SEO Testing Tools](https://twistblogg.blogspot.com/2014/02/top-5-free-seo-testing-tools.html)  
+  
+**Editing Section,**  
+  
+- I've already explained what needs to be modified in CSS section of the code. If you need any help, let me know.  
+  
+- Change TwistBlogg with your feedburner Address.  
+  
+- Change the text by modifying highlighted sections in the HTML part.  
+  
+  
+That's all. If you have followed all steps and made required modifications, you should be able to get _professional wordpress like email subscription widget for blogger_. If you need any help regarding the email subscription box, feel comfortable to leave a comment or contact me via Contact us section.  
+  
+If you love my work and want more [blogger widgets](https://twistblogg.blogspot.com/search/label/Blogger%20Widgets), take 5 seconds and help us grow as a community by sharing on at least one social media. It means a lot. Happy Blogging👷 **\[Tata - Bye Bye in Nepali \]**

@@ -1,0 +1,36 @@
+export const Testimonials = ({ ...props }) => (
+  <Section py="8|12|16|24" {...props}>
+    <Container>
+      <H2 m="0" fontSize="4xl|5xl" textAlign="center">
+        They place their trust in us
+      </H2>
+      <P fontSize="xl|2xl" mt="2" textAlign="center">
+        Aut facilis asperiores aliquam odit aliquam optio.
+      </P>
+      <Grid col="1|2" gap="8" mt="8">
+        <Testimonial
+          author="Sandeep Banoula"
+          description="COC Private Server"
+          message="I am just impressed by the service quality and working strategy from TwistBlogg Team. I hired them for the development of a blogger theme, and they have satisfied me to the full by delivering the template in time. They are experts, highly dedicated, attentive, talented and care much about the client needs."
+        />
+        <Testimonial
+          author="Jitender Kumar"
+          description="Glitch Times"
+          message="TwistBlogg offers unique and prime quality blog widgets that every blogger must use. And if you’re not happy with current design, their detailed and documented articles will help. I’ve been following this wonderful blog from past six months and I’m in love with everything about TwistBlogg."
+        />
+      </Grid>
+    </Container>
+  </Section>
+)
+
+export const Testimonial = ({ author, description, message, ...props }) => (
+  <Div position="relative" bg="muted" rounded="lg" p="6" {...props}>
+    <P m="0">{message}</P>
+    <P m="0" mt="4" fontSize="xl" fontWeight="semibold">
+      {author}
+    </P>
+    <P m="0" fontSize="md">
+      {description}
+    </P>
+  </Div>
+)

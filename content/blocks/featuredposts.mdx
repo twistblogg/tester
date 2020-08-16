@@ -1,0 +1,58 @@
+import { usePost, PostMeta } from "@reflexjs/gatsby-theme-post"
+
+export const FeaturedPosts = () => {
+  // Retrieve and filter posts.
+  const posts = usePost({ featured : true})
+  return posts.length ? (
+    <Section pb="8|12|16|24" bg="muted">
+        <Container>
+         <H2 flexDirection="column" textAlign="center" fontSize="4xl|5xl" pb="8|12|16" pt="12|16|24">Featured From <Span color="primary"> Our Blog</Span></H2>
+    <Grid col="1|1|2|3" gap="6|8">
+      {posts &&
+        posts.slice(0, 3).map((post, index) => (
+          <Div key={index} mb="8">
+            <Article>
+              {post.image && (
+                <Link href={post.slug} d="block">
+                  <Image
+                    src={post.image}
+                    title={post.title}
+                    alt={post.title}
+                    rounded="md"
+                    overflow="hidden"
+                    height="250px"
+                  />
+                </Link>
+              )}
+              {post.title && (
+                <Link href={post.slug}>
+                  <H2
+                    my="4"
+                    fontFamily="body"
+                    lineHeight="normal"
+                    fontWeight="semibold"
+                    fontSize="2xl"
+                    hoverColor="primary"
+                  >
+                    {post.title}
+                  </H2>
+                </Link>
+              )}
+              {post.excerpt && (
+                <P mt="1" fontSize="lg">
+                  {post.excerpt}
+                </P>
+              )}
+            </Article>
+          </Div>
+        ))}
+    </Grid>
+    <Div textAlign="center">
+         <ButtonLink href="/blog" variant="primary lg" mt="15|5" >
+         Check More Posts <Icon name="arrow-right" ml="4"/>
+      </ButtonLink>
+      </Div>
+   </Container>
+  </Section>  
+  ) : null
+}

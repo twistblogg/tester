@@ -1,0 +1,52 @@
+import { useSiteMetadata } from "@reflexjs/gatsby-theme-core"
+
+export const FooterBlock = () => {
+  const { title } = useSiteMetadata()
+  const navName = "footernav"
+  return (
+    <Section py={[8, 10, 12]}>
+      <Container>
+       <Div
+          borderTopWidth={1}
+          textAlign="center"
+          pt={[4, 5, 6]}
+        >
+        <Flexbox
+          flexDirection={["column", "row"]}
+          alignItems={["flex-start", "center"]}
+          justifyContent="space-between"
+        >
+          <P fontSize="sm" mt="0">
+            © {new Date().getFullYear()} {title}
+          </P>
+          <NavMenu
+            name={navName}
+            dropdown={false}
+            expand={false}
+            my="6|0"
+            gap="4|8"
+          />
+          <Grid col="4" gap="4" mt={[4, 0]}>
+            <A href="#" color="text">
+              <Icon name="twitter" size={5} />
+              <VisuallyHidden>Follow on Twitter</VisuallyHidden>
+            </A>
+            <A href="#" color="text">
+              <Icon name="github" size={5} />
+              <VisuallyHidden>Follow on Instagram</VisuallyHidden>
+            </A>
+            <A href="#" color="text">
+              <Icon name="facebook" size={5} />
+              <VisuallyHidden>Follow on Instagram</VisuallyHidden>
+            </A>
+            <A href="#" color="text">
+              <Icon name="linkedin" size={5} />
+              <VisuallyHidden>Follow on Instagram</VisuallyHidden>
+            </A>
+          </Grid>
+        </Flexbox>
+        </Div>
+      </Container>
+    </Section>
+  )
+}
